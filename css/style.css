@@ -1,0 +1,36 @@
+/* Configuração básica do documento */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+/* Estrutura básica de conteúdo */
+
+header,
+main,
+footer {
+    width: min(90%, 1200px);
+    margin-inline: auto;
+}
+
+header {
+    padding-top: 3rem;
+}
+
+main {
+    padding-block: 3rem;
+}
+
+footer {
+    padding-block: 2rem;
+}
