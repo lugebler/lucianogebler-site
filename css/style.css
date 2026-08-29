@@ -34,3 +34,117 @@ main {
 footer {
     padding-block: 2rem;
 }
+
+/* Cabeçalho principal */
+
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding-block: 2rem;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.site-identity {
+    display: flex;
+    flex-direction: column;
+}
+
+.site-name {
+    font-size: 1.35rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: inherit;
+}
+
+.site-tagline {
+    margin-top: 0.15rem;
+    font-size: 0.95rem;
+    color: #666;
+}
+
+.main-navigation {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.main-navigation a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 0.95rem;
+}
+
+.main-navigation a:hover,
+.main-navigation a:focus {
+    text-decoration: underline;
+}
+
+/* Área de apresentação */
+
+.hero {
+    min-height: 480px;
+    display: flex;
+    align-items: center;
+    padding-block: 5rem;
+}
+
+.hero-content {
+    max-width: 850px;
+}
+
+.hero h1 {
+    margin: 0;
+    max-width: 800px;
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+    line-height: 1.08;
+    letter-spacing: -0.03em;
+}
+
+.hero p {
+    max-width: 700px;
+    margin-top: 2rem;
+    margin-bottom: 0;
+    font-size: 1.2rem;
+    line-height: 1.7;
+    color: #555;
+}
+
+.hero-actions {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2.5rem;
+}
+
+.primary-action,
+.secondary-action {
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.primary-action {
+    padding: 0.8rem 1.2rem;
+    border: 1px solid #222;
+    color: #fff;
+    background-color: #222;
+}
+
+.secondary-action {
+    color: #222;
+}
+
+.secondary-action::after {
+    content: " →";
+}
+
+.primary-action:hover,
+.primary-action:focus {
+    background-color: #444;
+}
+
+.secondary-action:hover,
+.secondary-action:focus {
+    text-decoration: underline;
+}
